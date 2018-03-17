@@ -3,8 +3,9 @@
 ### Para executar o back-end é necessario executar seguintes passos:
 
 1. Criar um banco de dados com nome `ProvaTodos` usando o SQL Server de desenvolvimento `(localdb)\MSSQLLocalDB`.
-2. Entrar na pasta `src/ProvaTodos.Infrastructure` e executar `dotnet ef -s ..\ProvaTodos.Api\ database update -v` para criar o bando de dados.
-3. Entrar na pasta `src/ProvaTodos.Api` e executar `dotnet run` para iniciar a API em http://localhost:5444/api/account.
+2. Entrar na pasta raiz e executar `dotnet restore` para restaurar as dependências.
+3. Entrar na pasta `src/ProvaTodos.Infrastructure` e executar `dotnet ef -s ..\ProvaTodos.Api\ database update -v` para criar o bando de dados.
+4. Entrar na pasta `src/ProvaTodos.Api` e executar `dotnet run` para iniciar a API em http://localhost:5444/api/account.
 
 #### Para testar a API usando jQuery:
 ##### Listar todos Usuários.
